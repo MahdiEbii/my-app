@@ -14,7 +14,7 @@ const reducerSlice = createSlice({
         doneTodo:(state,action)=>{
             const todo = state.list.find(todo=>todo.id === action.payload.id)
             if(todo){
-                todo.status = action.payload.status
+                todo.title = action.payload.title
                 todo.description = action.payload.description
                 todo.status = action.payload.status
             }
