@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, View, Text, Pressable, TextInput} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import reducerSlice, { addTodo } from './redux/action/reducer'
+import { addTodo } from './redux/action/reducer'
 import { useDispatch } from 'react-redux';
 
 const TodoContent = (props) => {

@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
-import HomeScreen from "./screen/HomeScreen"
 import { Provider } from 'react-redux';
-import store from './components/redux/Store';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import store from './components/redux/Store';
+import HomeScreen from "./screen/HomeScreen"
 import AddTodoScreen from './screen/AddTodoScreen';
 import DetailScreen from './screen/DetailScreen';
 
