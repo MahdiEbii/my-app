@@ -5,7 +5,7 @@ const reducerSlice = createSlice({
     initialState:{list:[]},
     reducers:{
         addTodo : (state,action)=>{
-            console.log(action.payload)
+            // console.log(action.payload)
             state.list.push(action.payload)
         },
         removeTodo: (state,action)=>{

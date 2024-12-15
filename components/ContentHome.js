@@ -21,6 +21,8 @@ const ContentHome = ({navigation}) => {
     const handleDoneItem = (value) => {
             dispatch(doneTodo({
                 id: value.id ,
+                description:value.description,
+                title:value.title,
                 status:value.status=='incomplete'?'complete':'incomplete'
             }))
                 setChanged(!changed)
@@ -46,6 +48,7 @@ const ContentHome = ({navigation}) => {
                                         <Pressable
                                             onPress={() => {
                                                 handleDoneItem(item);
+                                                // handleAddItem(item)
                                                 setChanged(!changed)
                                                 
                                             }}
@@ -80,9 +83,9 @@ const ContentHome = ({navigation}) => {
                                             <View style={{flexDirection : 'row'}}>
                                                 <Pressable
                                                     onPress={() => {
-                                                        
+                                                        // handleAddItem(item)
                                                         handleDoneItem(item);
-                                                        setChanged(!changed);
+                                                        // setChanged(!changed);
                                                     }}
                                                     style={{marginLeft : 20}}
                                                 >
